@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIPED</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        h1, h2 {
+            font-family: "Courier New", Courier, monospace;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: cyan;
+            animation: blink 1s step-end infinite;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #111;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: cyan;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: magenta;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .album {
+            margin-bottom: 2rem;
+        }
+
+        .album img {
+            max-width: 100%;
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .album-links a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        .album-links a:hover {
+            color: magenta;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+        }
+
+        .contact a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIPED</h1>
+        <nav>
+            <a href="#album1">Album 1</a>
+            <a href="#album2">Album 2</a>
+            <a href="#album3">Album 3 & 4</a>
+            <a href="#album5">Album 5</a>
+            <a href="#album6">Album 6</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="album1" class="section">
+            <h2>Album 1: Make The Matter Known</h2>
+            <div class="album">
+                <p>No link yet</p>
+            </div>
+        </section>
+
+        <section id="album2" class="section">
+            <h2>Album 2: Large Fruit Still Uneaten</h2>
+            <div class="album">
+                <a href="https://bipedbiped.bandcamp.com/album/large-fruit-still-uneaten" target="_blank">Large Fruit Still Uneaten</a>
+                <img src="YOUR_IMAGE_URL_HERE" alt="Album 2 Image">
+            </div>
+        </section>
+
+        <section id="album3" class="section">
+            <h2>Album 3 & 4: Folding Up / Contracting - Cumulative / Expanding</h2>
+            <div class="album">
+                <a href="https://bipedbiped.bandcamp.com/album/folding-up-contracting-cumulative-expanding-2-x-ep" target="_blank">Folding Up / Contracting - Cumulative / Expanding</a>
+                <div style="display: flex; gap: 1rem;">
+                    <img src="YOUR_IMAGE_URL_1" alt="Album 3 Image">
+                    <img src="YOUR_IMAGE_URL_2" alt="Album 4 Image">
+                </div>
+            </div>
+        </section>
+
+        <section id="album5" class="section">
+            <h2>Album 5: Lend Grace to the Toes</h2>
+            <div class="album">
+                <a href="https://bipedbiped.bandcamp.com/album/lend-grace-to-the-toes" target="_blank">Lend Grace to the Toes</a>
+                <img src="YOUR_IMAGE_URL_HERE" alt="Album 5 Image">
+            </div>
+        </section>
+
+        <section id="album6" class="section">
+            <h2>Album 6: Lose the Goat with Ease</h2>
+            <div class="album">
+                <a href="https://bipedbiped.bandcamp.com/album/lose-the-goat-with-ease" target="_blank">Lose the Goat with Ease</a>
+                <img src="YOUR_IMAGE_URL_HERE" alt="Album 6 Image">
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact">
+                <a href="https://bipedbiped.bandcamp.com" target="_blank">Bandcamp</a><br>
+                <a href="mailto:biped.contact@tutanota.com">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 BIPED
+    </footer>
+</body>
+</html>
